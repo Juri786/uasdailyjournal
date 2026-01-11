@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Halo! Semoga harimu menyenangkan hari ini. Coba luangkan waktu untuk hal yang kamu sukai, seperti membaca buku atau menikmati secangkir teh hangat dengan tenang. Jangan lupa bergerak dan rasakan energi positif di setiap momennya, ya!"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 54,
+    "candidatesTokenCount": 49,
+    "totalTokenCount": 417,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 54
+      }
+    ],
+    "thoughtsTokenCount": 314
+  },
+  "modelVersion": "gemini-2.5-flash",
+  "responseId": "DaNjadicJuyy4-EPurn50A4"
+}
