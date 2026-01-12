@@ -62,10 +62,18 @@ if (curl_errno($ch)) {
 curl_close($ch);
 
 /* ===== SIMPAN HISTORY ===== */
-mysqli_query($conn, "
+
+$stmt = $conn->prepare("
     INSERT INTO history_chat (pesan_user, respon_ai, tanggal)
-    VALUES ('$input', '$reply', NOW())
+    VALUES (?, ?, NOW())
 ");
+$stmt->bind_param("ss", $input, $reply);
+$stmt->execute();
+$stmt->close();
+// mysqli_query($conn, "
+//     INSERT INTO history_chat (pesan_user, respon_ai, tanggal)
+//     VALUES ('$input', '$reply', NOW())
+// ");
 
 echo json_encode([
     "status" => "success",
