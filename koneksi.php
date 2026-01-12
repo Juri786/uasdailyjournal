@@ -1,13 +1,9 @@
 <?php
+include_once "env.php";
 date_default_timezone_set('Asia/Jakarta');
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$db = "webdailyjournal";
-
 //create connection
-$conn = new mysqli($servername,$username,$password,$db);
+$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
 //check apakah ada eror connection
 if($conn->connect_error){

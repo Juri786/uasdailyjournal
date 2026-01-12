@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
-include "koneksi.php";
-include "env.php";
+include_once "koneksi.php";
+include_once "env.php";
 
 $input = trim($_POST['pesan'] ?? "");
 
@@ -70,10 +70,6 @@ $stmt = $conn->prepare("
 $stmt->bind_param("ss", $input, $reply);
 $stmt->execute();
 $stmt->close();
-// mysqli_query($conn, "
-//     INSERT INTO history_chat (pesan_user, respon_ai, tanggal)
-//     VALUES ('$input', '$reply', NOW())
-// ");
 
 echo json_encode([
     "status" => "success",

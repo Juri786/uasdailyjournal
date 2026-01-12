@@ -150,6 +150,26 @@ include "koneksi.php";
         </div>
     </section>
     <!--gallery end-->
+    <!--chatbot begin-->
+    <section id="chatbot" class="text-center p-5">
+    <div class="container mt-5">
+        <h1 class="fw-bold display-4 pb-3">Chatbot</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            <h5>🤖 Chatbot Ide Kegiatan</h5>
+            <p class="text-muted">
+                *Chatbot ini menggunakan AI sebagai alat bantu ide kegiatan.*
+            </p>
+
+            <div id="chat-result" class="alert alert-light"></div>
+
+            <div class="input-group">
+                <input type="text" id="pesan" class="form-control" placeholder="Kegiatan hari ini apa ya?" short>
+                <button class="btn btn-primary" id="kirim">Send</button>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--chatbot end-->
     <!--footer begin-->
     <footer class="text-center p-5">
         <div>
