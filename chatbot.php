@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
-include "koneksi.php";
-include "env.php";
+include_once "koneksi.php";
+include_once "env.php";
 
 $input = trim($_POST['pesan'] ?? "");
 
