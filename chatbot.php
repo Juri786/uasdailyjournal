@@ -70,10 +70,6 @@ $stmt = $conn->prepare("
 $stmt->bind_param("ss", $input, $reply);
 $stmt->execute();
 $stmt->close();
-// mysqli_query($conn, "
-//     INSERT INTO history_chat (pesan_user, respon_ai, tanggal)
-//     VALUES ('$input', '$reply', NOW())
-// ");
 
 echo json_encode([
     "status" => "success",

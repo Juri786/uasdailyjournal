@@ -340,7 +340,7 @@ include "koneksi.php";
             <div id="chat-result" class="alert alert-light"></div>
 
             <div class="input-group">
-                <input type="text" id="pesan" class="form-control" placeholder="Kegiatan hari ini apa ya?">
+                <input type="text" id="pesan" class="form-control" placeholder="Kegiatan hari ini apa ya?" short>
                 <button class="btn btn-primary" id="kirim">Send</button>
             </div>
         </div>
