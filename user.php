@@ -62,7 +62,7 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] === 'admin') {
                         <a class="nav-link" href="#gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#profile">Profil</a>
+                        <a class="nav-link" href="#profil">Profil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-danger" href="logout.php"
